@@ -78,3 +78,56 @@ p, li, .wp-block-heading, summary{
 .sub-menu a{
 	text-shadow:none
 }
+
+.custom-post{
+	background-color:rgba(255,255,255,0.4);
+	width:800px;
+	margin:auto;
+	padding:30px;
+	margin-top:30px;
+	border-radius:10px;
+}
+
+.custom-post-title{
+	color:black;
+	font-size:31px;
+	text-align:center;
+	margin-bottom:15px;
+	font-weight:bold;
+}
+
+.custom-post-thumbnail{
+	width: 500px;
+	border-radius:10px;
+	margin:auto;
+}
+
+.custom-post-excerpt{
+	color:black;
+	margin-top:10px;
+	font-size:21px
+}
+
+.custom-post-excerpt p{
+	color:black;
+}
+
+.custom-post-excerpt a{
+	font-weight: bold;
+}
+
+.custom-post-excerpt a:link{
+	color:white
+}
+
+.custom-post-excerpt a:active{
+	color:white
+}
+
+.custom-post-excerpt a:visited{
+	color:white
+}
+
+.custom-post-excerpt a:hover{
+	color:red;
+}
