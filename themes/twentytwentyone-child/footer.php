@@ -29,17 +29,16 @@
 		$post_query = new WP_Query($post_args);
 
 		if($post_query->have_posts()){
-			while($post_query->have_posts()){
+			while ($post_query->have_posts()) {
 				$post_query->the_post();
-				the_title();
 				?>
-				<br>
+				<div class="custom-post">
+					<div class="custom-post-title"><?php the_title(); ?></div>
+					<div class="custom-post-thumbnail"><?php the_post_thumbnail(); ?></div>
+					<div class="custom-post-excerpt"><?php the_excerpt(); ?></div>
+				</div>
 				<?php
-				the_post_thumbnail();
-				the_excerpt();
 			}
-			wp_reset_postdata();
-		}
 }
 	?>
 
