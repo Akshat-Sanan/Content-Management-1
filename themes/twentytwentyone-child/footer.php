@@ -17,7 +17,7 @@
 	</div><!-- #content -->
 
 	<?php
-
+	if(is_front_page() || !is_home()){
 		$post_args = array(
 			'post_type' => 'post',
 			'post_status' => 'publish',
@@ -40,7 +40,7 @@
 			}
 			wp_reset_postdata();
 		}
-
+}
 	?>
 
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
